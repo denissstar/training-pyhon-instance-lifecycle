@@ -7,7 +7,7 @@ resource "aws_cloudwatch_event_rule" "stop" {
 
 resource "aws_cloudwatch_event_rule" "start" {
   name        = "StartEC2Instances"
-  description = "SttartEC2Instances"
+  description = "StartEC2Instances"
 
   schedule_expression = "cron(0 10 ? * * *)"
 }

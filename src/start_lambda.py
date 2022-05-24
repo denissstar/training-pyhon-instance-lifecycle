@@ -15,4 +15,4 @@ def get_instance_ids(): # TODO put this in shared lambda layer
 def lambda_handler(event, context):
     instances = get_instance_ids()
     ec2_client.start_instances(InstanceIds=instances)
-    print(f"started your instances: {instances}")
+    print(f"Started your instances: {instances}")

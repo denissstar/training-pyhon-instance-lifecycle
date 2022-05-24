@@ -15,4 +15,4 @@ def get_instance_ids(): # TODO put this in shared lambda layer
 def lambda_handler(event, context):
     instances = get_instance_ids()
     ec2_client.stop_instances(InstanceIds=instances)
-    print(f"stopped your instances: {instances}")
+    print(f"Stopped your instances: {instances}")
